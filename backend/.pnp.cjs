@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:f5126a6c59718fab632a5fe9c89dad727d14c0854924da0278c36945a50e100550614ee30506e48e5221c7c36dc5ebab4a104a63756e8b71f6e37453259fec8c#npm:5.0.0"],\
             ["jest", "virtual:f5126a6c59718fab632a5fe9c89dad727d14c0854924da0278c36945a50e100550614ee30506e48e5221c7c36dc5ebab4a104a63756e8b71f6e37453259fec8c#npm:29.6.1"],\
             ["prettier", "npm:3.0.0"],\
+            ["prisma", "npm:5.0.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.8.1"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -1829,6 +1830,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@prisma/engines", [\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-5.0.0-9f601585ff/node_modules/@prisma/engines/",\
+          "packageDependencies": [\
+            ["@prisma/engines", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@sinclair/typebox", [\
         ["npm:0.27.8", {\
           "packageLocation": "./.yarn/cache/@sinclair-typebox-npm-0.27.8-23e206d653-00bd7362a3.zip/node_modules/@sinclair/typebox/",\
@@ -3361,6 +3371,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:f5126a6c59718fab632a5fe9c89dad727d14c0854924da0278c36945a50e100550614ee30506e48e5221c7c36dc5ebab4a104a63756e8b71f6e37453259fec8c#npm:5.0.0"],\
             ["jest", "virtual:f5126a6c59718fab632a5fe9c89dad727d14c0854924da0278c36945a50e100550614ee30506e48e5221c7c36dc5ebab4a104a63756e8b71f6e37453259fec8c#npm:29.6.1"],\
             ["prettier", "npm:3.0.0"],\
+            ["prisma", "npm:5.0.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.8.1"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -7812,6 +7823,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/schemas", "npm:29.6.0"],\
             ["ansi-styles", "npm:5.2.0"],\
             ["react-is", "npm:18.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prisma", [\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/unplugged/prisma-npm-5.0.0-f854c0a4f2/node_modules/prisma/",\
+          "packageDependencies": [\
+            ["prisma", "npm:5.0.0"],\
+            ["@prisma/engines", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
