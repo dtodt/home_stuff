@@ -58,16 +58,8 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## DB
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+```sh
+docker run --name home_stuff_mysql_db -v "$PWD/.docker/mysql/home_stuff_data":/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=mysql -e MYSQL_DATABASE=home_stuff -p 3306:3306 --user 1000:1000 -d mysql
+```

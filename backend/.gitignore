@@ -42,7 +42,11 @@ lerna-debug.log*
 !.yarn/versions
 !.yarn/cache
 
+# environment config
 .env*
 
 # prisma generated client
 prisma/.prisma/
+
+# docker temporary files
+.docker/
