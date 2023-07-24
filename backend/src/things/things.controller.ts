@@ -1,3 +1,4 @@
+import { Prisma } from '.prisma/client';
 import {
   Controller,
   Get,
@@ -7,17 +8,16 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
+
 import { ThingsService } from './things.service';
-import { CreateThingDto } from './dto/create-thing.dto';
-import { UpdateThingDto } from './dto/update-thing.dto';
 
 @Controller('things')
 export class ThingsController {
   constructor(private readonly thingsService: ThingsService) {}
 
   @Post()
-  create(@Body() createThingDto: CreateThingDto) {
-    return this.thingsService.create(createThingDto);
+  create(@Body() dto: Prisma.ThingCreateInput) {
+    return this.thingsService.create(dto);
   }
 
   @Get()
@@ -31,8 +31,8 @@ export class ThingsController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateThingDto: UpdateThingDto) {
-    return this.thingsService.update(+id, updateThingDto);
+  update(@Param('id') id: string, @Body() dto: Prisma.ThingUpdateInput) {
+    return this.thingsService.update(+id, dto);
   }
 
   @Delete(':id')
