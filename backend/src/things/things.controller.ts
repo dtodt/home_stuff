@@ -7,10 +7,13 @@ import {
   Patch,
   Param,
   Delete,
+  UseGuards,
 } from '@nestjs/common';
 
+import { AuthGuard } from 'src/auth/guards/auth.guard';
 import { ThingsService } from './things.service';
 
+@UseGuards(AuthGuard)
 @Controller('things')
 export class ThingsController {
   constructor(private readonly thingsService: ThingsService) {}

@@ -7,10 +7,13 @@ import {
   Patch,
   Param,
   Delete,
+  UseGuards,
 } from '@nestjs/common';
 
+import { AuthGuard } from 'src/auth/guards/auth.guard';
 import { CategoriesService } from './categories.service';
 
+@UseGuards(AuthGuard)
 @Controller('categories')
 export class CategoriesController {
   constructor(private readonly categoriesService: CategoriesService) {}
