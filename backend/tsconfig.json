@@ -45,6 +45,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
   },
   "include": [

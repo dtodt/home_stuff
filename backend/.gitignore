@@ -50,3 +50,6 @@ prisma/.prisma/
 
 # docker temporary files
 .docker/
+
+# firebase admin config file
+src/auth/firebase/firebase-config.json
