@@ -12,10 +12,14 @@
 			"arcanis.vscode-zipfs",
 			"dbaeumer.vscode-eslint",
 			"esbenp.prettier-vscode",
-			"Prisma.prisma"
+			"Prisma.prisma",
+			"qwtel.sqlite-viewer"
 		]
 	},
 	"settings": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true
+		},
 		"search.exclude": {
 			"**/.yarn": true,
 			"**/.pnp.*": true
